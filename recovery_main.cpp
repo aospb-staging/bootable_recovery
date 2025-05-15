@@ -464,6 +464,7 @@ int main(int argc, char** argv) {
   if (get_build_type() != "eng") {
     device->RemoveMenuItemForAction(Device::RUN_LOCALE_TEST);
     device->RemoveMenuItemForAction(Device::ENTER_RESCUE);
+    device->RemoveMenuItemForAction(Device::WIPE_SYSTEM);
   }
 
   ui->SetBackground(RecoveryUI::NONE);
